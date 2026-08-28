@@ -1,5 +1,3 @@
-[user]
-
 [gpg]
 	program = gpg
 
@@ -20,9 +18,8 @@
 [diff]
   colorMoved = default
 [user]
-	name = nilay-banerjee 
+	name = nilay-banerjee
 	email = nbanerjee02.asn@gmail.com
-	signingkey = 6F63D13B9EC18B2D
 [credential]
 	helper = store
 [commit]
@@ -33,3 +30,7 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
+
+# Machine-specific settings (signing key, etc.) - not tracked
+[include]
+	path = ~/.gitconfig.local
