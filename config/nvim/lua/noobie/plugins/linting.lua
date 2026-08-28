@@ -16,7 +16,7 @@ return {
 		local function file_in_cwd(file_name)
 			return vim.fs.find(file_name, {
 				upward = true,
-				stop = vim.loop.cwd():match("(.+)/"),
+				stop = (vim.uv or vim.loop).cwd():match("(.+)/"),
 				path = vim.fs.dirname(vim.api.nvim_buf_get_name(0)),
 				type = "file",
 			})[1]
