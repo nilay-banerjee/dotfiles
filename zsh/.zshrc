@@ -102,12 +102,6 @@ export GPG_TTY=$(tty)
 bindkey "^[[1;3D" backward-word #Alt-Left
 bindkey "^[[1;3C" forward-word #Alt-Right
 
-# Added by Antigravity
-export PATH="/Users/noobie-px/.antigravity/antigravity/bin:$PATH"
-
-export STM32CubeMX_PATH=/Applications/STMicroelectronics/STM32CubeMX.app/Contents/Resources
-export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
-
 export TUNNELTO_INSTALL="/Users/noobie-px/.tunnelto"
 export PATH="$TUNNELTO_INSTALL/bin:$PATH"
 
