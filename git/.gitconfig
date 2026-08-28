@@ -1,0 +1,35 @@
+[user]
+
+[gpg]
+	program = gpg
+
+[core]
+  editor = nvim
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  side-by-side = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+[user]
+	name = nilay-banerjee 
+	email = nbanerjee02.asn@gmail.com
+	signingkey = 6F63D13B9EC18B2D
+[credential]
+	helper = store
+[commit]
+	gpgsign = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

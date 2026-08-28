@@ -1,0 +1,7 @@
+# Neovim swap/undo files
+*.swp
+*.swo
+.netrwhist
+
+# OS
+.DS_Store
