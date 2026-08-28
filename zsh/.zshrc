@@ -229,7 +229,7 @@ export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgra
 export TUNNELTO_INSTALL="/Users/noobie-px/.tunnelto"
 export PATH="$TUNNELTO_INSTALL/bin:$PATH"
 
-. "$HOME/.local/bin/env"
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 # ── July launcher: open Claude Code in the Address vault from anywhere ──
 july() {
