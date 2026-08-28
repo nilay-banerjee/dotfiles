@@ -37,6 +37,16 @@ The two `Application Support` entries exist because macOS builds of lazygit and
 Ghostty read from there, not from `~/.config`. Both resolve to the same tracked
 file, so the ambiguity doesn't matter.
 
+## Deep dives
+
+Each config has its own page in `docs/`:
+
+- [nvim](docs/nvim.md) — options, keymaps, the plugin roster, lockfile workflow
+- [tmux](docs/tmux.md) — the Ctrl-a prefix, bindings, TPM plugins, session persistence
+- [zsh](docs/zsh.md) — omz/p10k setup, aliases, fzf wiring, version managers, PATH
+- [git + lazygit](docs/git.md) — signing, delta everywhere, credentials
+- [ghostty + aerospace](docs/desktop.md) — terminal and tiling WM, how the Alt-key bindings avoid colliding
+
 ## Per-config notes
 
 **zsh** — expects oh-my-zsh at `~/.oh-my-zsh` with zsh-autosuggestions,
