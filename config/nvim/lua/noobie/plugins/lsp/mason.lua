@@ -15,6 +15,7 @@ return {
 
 		-- enable mason and configure icons
 		mason.setup({
+			max_concurrent_installers = 1,
 			ui = {
 				icons = {
 					package_installed = "✓",
